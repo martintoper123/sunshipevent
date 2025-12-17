@@ -1,0 +1,12 @@
+name: SunShipEvent
+version: '1.0.0'
+main: ru.loper.sunshipevent.SunShipEvent
+api-version: '1.20'
+authors: [Loper]
+website: t.me/bysundev
+
+depend: [SunCore, ZNPCsPlus]
+softdepend: [SunEventManager, SunLootManager]
+
+commands:
+  ship: {}

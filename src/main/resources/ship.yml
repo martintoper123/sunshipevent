@@ -1,0 +1,198 @@
+region_settings:
+  region_radius:
+    x: 20
+    y: 200
+    z: 20
+
+generator_settings:
+  radius: 2000
+  # find_attempts: 100 было в планах
+  world: world
+  center:
+    x: 0
+    z: 0
+  biomes:
+    - PLAINS
+    - SUNFLOWER_PLAINS
+    - SNOWY_PLAINS
+    - ICE_SPIKES
+    - DESERT
+    - SAVANNA
+    - SAVANNA_PLATEAU
+    - BADLANDS
+    - WOODED_BADLANDS_PLATEAU
+    - BADLANDS_PLATEAU
+    - STONY_SHORE
+    - SWAMP
+    - MUSHROOM_FIELDS
+    - MUSHROOM_FIELD_SHORE
+    - FROZEN_RIVER
+    - SNOWY_TUNDRA
+    - THE_VOID
+  # Тип разрешенных биомов
+  # Черный список (blacklist) - список запрещенных биомов
+  # Белый список (whitelist) - список разрешенных биомов
+  biomes_property_type: whitelist
+timers:
+  #Время до старта ивента
+  prestart: 5
+  #Время до открытия ивента после окончания спавна тыпо
+  started: 120
+  #Время до удаления ивента
+  stopping: 120
+
+info_messages:
+  prestart: '&#FAA200▶&#CF7000 &#C87A00Т&#CE7E00а&#D48100и&#D98500н&#DF8800с&#E58C00т&#EB8F00в&#F19300е&#F69700н&#FC9A00н&#FC9A00ы&#F69700й &#EB8F00к&#E58C00о&#DF8800р&#D98500а&#D48100б&#CE7E00л&#C87A00ь &fпоявится через &#EB8F00{time} на рандомных координатах'
+  start: '&#FAA200▶&#CF7000 &#C87A00Т&#CE7E00а&#D48100и&#D98500н&#DF8800с&#E58C00т&#EB8F00в&#F19300е&#F69700н&#FC9A00н&#FC9A00ы&#F69700й &#EB8F00к&#E58C00о&#DF8800р&#D98500а&#D48100б&#CE7E00л&#C87A00ь &fнаходится на координатах &#EB8F00{x} {y} {z}&f.'
+  stop: '&#FAA200▶&#CF7000 &#C87A00Т&#CE7E00а&#D48100и&#D98500н&#DF8800с&#E58C00т&#EB8F00в&#F19300е&#F69700н&#FC9A00н&#FC9A00ы&#F69700й &#EB8F00к&#E58C00о&#DF8800р&#D98500а&#D48100б&#CE7E00л&#C87A00ь &fнаходится на координатах &#EB8F00{x} {y} {z}&f и удалится через &#14FF00{time}'
+
+keys:
+  default:
+    loot: ''
+    material: TRIPWIRE_HOOK
+    enchantments:
+      - FORTUNE:1
+    display_name: '&#C87A00[&#D38100☠&#DE8800] &#F49500О&#FF9C00т&#F49500м&#E98E00ы&#DE8800ч&#D38100к&#C87A00а'
+    lore:
+      - ' '
+      - ' &7Особенности:'
+      - '&f - можно &#FF9C00взломать&f и украсть'
+      - '&f   &#FF9C00сокровища пиратов&f на корабле.'
+      - ' '
+      - ' &#FF9C00Редкость: Обычная [★☆☆☆☆]'
+  rare:
+    loot: ''
+    material: TRIPWIRE_HOOK
+    treasure: true
+    enchantments:
+      - FORTUNE:1
+    display_name: "&x&D&4&0&0&F&F[☠] Отмычка"
+    lore:
+      - ""
+      - "&7 Особенности:"
+      - " &f- можно &x&D&4&0&0&F&Fвзломать &fи украсть"
+      - " &x&D&4&0&0&F&F  сокровища пиратов &fна корабле."
+      - ""
+      - "&x&D&4&0&0&F&F Редкость: Редкая [★★★☆☆]"
+  unique:
+    loot: ''
+    treasure: true
+    material: TRIPWIRE_HOOK
+    enchantments:
+      - FORTUNE:1
+    display_name: "&x&0&0&9&C&F&F[☠] Отмычка"
+    lore:
+      - ""
+      - "&7 Особенности:"
+      - " &f- можно &x&0&0&9&C&F&Fвзломать &fи украсть"
+      - " &x&0&0&9&C&F&F  сокровища пиратов &fна корабле."
+      - ""
+      - "&x&0&0&9&C&F&F Редкость: Уникальная [★★★★★]"
+
+rarities:
+  default:
+    region_flags:
+      build: deny
+      block-break: deny
+      block-place: deny
+      tnt: deny
+      lighter: deny
+      creeper-explosion: deny
+      ghast-fireball: deny
+      other-explosion: deny
+      enderman-grief: deny
+      fire-spread: deny
+      snowman-trails: deny
+      ravager-grief: deny
+      lava-fire: deny
+      water-flow: deny
+      lava-flow: deny
+      ice-melt: deny
+      chest-access: deny
+
+    loot_name: loot-тег
+
+    schematic_file_name: ship.schem
+    schematic_offsets:
+      x: 0
+      y: 4
+      z: 0
+
+    chance: 100
+
+    hologram_toggle: true
+    hologram_offset:
+      x: 0.5
+      y: 2
+      z: 0.5
+
+    messages:
+      prestart:
+        - '&f'
+        - '&#FAA200▶&#CF7000 &#C87A00Т&#CE7E00а&#D48100и&#D98500н&#DF8800с&#E58C00т&#EB8F00в&#F19300е&#F69700н&#FC9A00н&#FC9A00ы&#F69700й &#EB8F00к&#E58C00о&#DF8800р&#D98500а&#D48100б&#CE7E00л&#C87A00ь &fпоявится через &#EB8F001 минуту &fна рандомных координатах'
+        - '&f'
+      start:
+        - ' &#CF7000&l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+        - ' &#FC9A00&l&n▍&f &#C87A00Т&#CE7E00а&#D48100и&#D98500н&#DF8800с&#E58C00т&#EB8F00в&#F19300е&#F69700н&#FC9A00н&#FC9A00ы&#F69700й &#EB8F00к&#E58C00о&#DF8800р&#D98500а&#D48100б&#CE7E00л&#C87A00ь '
+        - ' &#FC9A00&l&n▍&f'
+        - ' &#FC9A00&l&n▍&f Редкость: &#989898О&#9F9586б&#A59274ы&#AC8F62ч&#B58841н&#BF8121а&#C87A00я'
+        - ' &#FC9A00&l▍&f Координаты: &#FC9A00{x} {y} {z}'
+        - ' &#CF7000&l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+    sounds:
+      prestart: ENTITY_PLAYER_LEVELUP;1.0;1.0
+      start: ENTITY_PLAYER_LEVELUP;1.0;1.0
+      stop: ENTITY_PLAYER_LEVELUP;1.0;1.0
+
+    holograms:
+      start:
+        - "&x&E&F&0&2&F&BСокровища пиратов"
+        - "&fИспользовано {used_keys}/4 отмычек"
+      stop:
+        - "&x&E&F&0&2&F&BСокровища пиратов"
+        - "&fОткрытие через {time}"
+      open:
+        - "&x&E&F&0&2&F&BСокровища пиратов"
+        - "&fОткрыто"
+    npc:
+      hologram:
+        take:
+          - '&#FFA063Капитан'
+          - '&f- Есть отмычка, бери скорее! &7[ПКМ]'
+        wait:
+          - '&#FFA063Капитан'
+          - '&f- Подожди, ищу отмычку!'
+      respawn:
+        time: 60
+        count: 10
+      location_offset:
+        x: 0.5
+        y: 4
+        z: 0.5
+    key_chances:
+      default: 70
+      rare: 20
+      unique: 10
+
+    treasures:
+      items:
+        min: 40
+        max: 50
+      title: ''
+      rows: 3
+      material: RESPAWN_ANCHOR
+      offsets:
+        1:
+          x: 0
+          y: 8
+          z: 24
+
+    chests: #Сундуки
+      remove_hologram:
+        - '&6Клад'
+        - '&fЗакроется через &6{time}&r'
+      items:
+        min: 40
+        max: 50
+      title: 'Пиратский клад'
+      material: BARREL
+      rows: 3
